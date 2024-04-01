@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const UserCards = ({ user, open, handleDropdown }) => {
+const UserCards = ({ user, open, handleDropdown,domainNames }) => {
     const [dropdown, setDropdown] = useState(true); // Correctly initialize dropdown as a boolean
     const { id, first_name, last_name, avatar, domain } = user;
 

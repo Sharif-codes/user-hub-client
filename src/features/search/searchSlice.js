@@ -12,10 +12,13 @@ export const searchSlice = createSlice({
         searchText: (state, action) => {
             state.search = action.payload
         },
+        userFilter: (state, action) => {
+            state.search = action.payload
+        },
 
     },
 })
-export const {searchText} = searchSlice.actions
+export const {searchText,userFilter} = searchSlice.actions
 
 
 export default searchSlice.reducer
